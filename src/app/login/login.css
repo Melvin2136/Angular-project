@@ -1,0 +1,39 @@
+.login-wrapper {
+  width: 320px;
+  margin: 120px auto;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #125aa0;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.signup-text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+

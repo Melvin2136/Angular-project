@@ -1,0 +1,36 @@
+<div class="signup-wrapper">
+  <h2>Sign Up</h2>
+
+  <input
+    type="text"
+    placeholder="Full Name"
+    [(ngModel)]="name"
+  />
+
+  <input
+    type="email"
+    placeholder="Email"
+    [(ngModel)]="email"
+  />
+
+  <input
+    type="password"
+    placeholder="Password"
+    [(ngModel)]="password"
+  />
+
+  <input
+    type="password"
+    placeholder="Confirm Password"
+    [(ngModel)]="confirmPassword"
+  />
+
+  <p class="error" *ngIf="error">{{ error }}</p>
+
+  <button (click)="onSignup()">Create Account</button>
+
+  <p class="login-text">
+    Already have an account?
+    <a routerLink="/login">Login</a>
+  </p>
+</div>

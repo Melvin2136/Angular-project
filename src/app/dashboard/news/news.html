@@ -1,0 +1,13 @@
+<h3>Daily News</h3>
+
+<button (click)="switchDay('today')">Today</button>
+<button (click)="switchDay('yesterday')">Yesterday</button>
+
+<ul *ngIf="selectedDay === 'today'">
+  <li *ngFor="let news of todayNews">{{ news }}</li>
+</ul>
+
+<ul *ngIf="selectedDay === 'yesterday'">
+  <li *ngFor="let news of yesterdayNews">{{ news }}</li>
+</ul>
+

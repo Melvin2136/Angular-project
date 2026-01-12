@@ -1,0 +1,27 @@
+<div class="login-wrapper">
+  <h2>Login</h2>
+
+  <input
+    type="text"
+    placeholder="Login ID / Email"
+    [(ngModel)]="loginId"
+  />
+
+  <input
+    type="password"
+    placeholder="Password"
+    [(ngModel)]="password"
+  />
+
+  <!-- ⚠️ Warning message -->
+  <p class="error" *ngIf="errorMessage">
+    {{ errorMessage }}
+  </p>
+
+  <button (click)="onLogin()">Login</button>
+
+  <p class="signup-text">
+    Don’t have an account?
+    <a routerLink="/signup">Sign up</a>
+  </p>
+</div>
